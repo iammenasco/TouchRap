@@ -7,21 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import "TouchBar.h"
 
-@interface AppDelegate ()
+static const NSTouchBarItemIdentifier kHornIdentifier = @"rap.horn";
+
+@interface AppDelegate () <NSTouchBarDelegate>
 
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+NSSound *sound;
+
+- (void)playSound:()sender
+{
+    if([sound isPlaying]) {
+        sound.currentTime = .1;
+    } else {
+        [sound play];
+    }
 }
 
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    sound = [NSSound soundNamed:@"horn"];
+    NSCustomTouchBarItem *horn = [[NSCustomTouchBarItem alloc] initWithIdentifier:kHornIdentifier];
+    horn.view = [NSButton buttonWithTitle:@"📢" target:self action: @selector(playSound:)];
+    [NSTouchBarItem addSystemTrayItem:horn];
+    DFRElementSetControlStripPresenceForIdentifier(kHornIdentifier, YES);
 }
-
 
 @end

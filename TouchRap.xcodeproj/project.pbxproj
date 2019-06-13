@@ -7,24 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30146D122B29EB3003D64CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30146D022B29EB3003D64CA /* Main.storyboard */; };
 		D39921A822B298FB00508EEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D39921A722B298FB00508EEC /* AppDelegate.m */; };
 		D39921AB22B298FB00508EEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39921AA22B298FB00508EEC /* ViewController.m */; };
 		D39921AD22B298FB00508EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39921AC22B298FB00508EEC /* Assets.xcassets */; };
-		D39921B022B298FB00508EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39921AE22B298FB00508EEC /* Main.storyboard */; };
 		D39921B322B298FB00508EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39921B222B298FB00508EEC /* main.m */; };
+		D39921BE22B29A0100508EEC /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39921BD22B29A0100508EEC /* DFRFoundation.framework */; };
+		D39921C022B29A2100508EEC /* horn.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D39921BF22B29A2100508EEC /* horn.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30146D022B29EB3003D64CA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D39921A322B298FB00508EEC /* TouchRap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchRap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39921A622B298FB00508EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D39921A722B298FB00508EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D39921A922B298FB00508EEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D39921AA22B298FB00508EEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D39921AC22B298FB00508EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D39921AF22B298FB00508EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D39921B122B298FB00508EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39921B222B298FB00508EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D39921B422B298FB00508EEC /* TouchRap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TouchRap.entitlements; sourceTree = "<group>"; };
+		D39921BA22B2997000508EEC /* TouchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
+		D39921BD22B29A0100508EEC /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFRFoundation.framework; sourceTree = "<group>"; };
+		D39921BF22B29A2100508EEC /* horn.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = horn.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39921BE22B29A0100508EEC /* DFRFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,8 +49,10 @@
 			children = (
 				D39921A522B298FB00508EEC /* TouchRap */,
 				D39921A422B298FB00508EEC /* Products */,
+				D39921BD22B29A0100508EEC /* DFRFoundation.framework */,
 			);
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		D39921A422B298FB00508EEC /* Products */ = {
 			isa = PBXGroup;
@@ -57,12 +65,14 @@
 		D39921A522B298FB00508EEC /* TouchRap */ = {
 			isa = PBXGroup;
 			children = (
+				D39921BF22B29A2100508EEC /* horn.aiff */,
 				D39921A622B298FB00508EEC /* AppDelegate.h */,
 				D39921A722B298FB00508EEC /* AppDelegate.m */,
+				D39921BA22B2997000508EEC /* TouchBar.h */,
 				D39921A922B298FB00508EEC /* ViewController.h */,
 				D39921AA22B298FB00508EEC /* ViewController.m */,
+				D30146D022B29EB3003D64CA /* Main.storyboard */,
 				D39921AC22B298FB00508EEC /* Assets.xcassets */,
-				D39921AE22B298FB00508EEC /* Main.storyboard */,
 				D39921B122B298FB00508EEC /* Info.plist */,
 				D39921B222B298FB00508EEC /* main.m */,
 				D39921B422B298FB00508EEC /* TouchRap.entitlements */,
@@ -127,8 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30146D122B29EB3003D64CA /* Main.storyboard in Resources */,
 				D39921AD22B298FB00508EEC /* Assets.xcassets in Resources */,
-				D39921B022B298FB00508EEC /* Main.storyboard in Resources */,
+				D39921C022B29A2100508EEC /* horn.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,17 +157,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D39921AE22B298FB00508EEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D39921AF22B298FB00508EEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D39921B522B298FB00508EEC /* Debug */ = {
@@ -278,6 +278,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8CWRAKVS56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TouchRap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +300,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8CWRAKVS56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TouchRap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
